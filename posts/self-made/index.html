@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico">
+
+
+    <!-- meta -->
+
+
+<title>HTML页面 | HonkW&#39;s Storage</title>
+
+
+    <meta name="keywords" content="html">
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="个人制作的一些页面，使用大佬们模板制作而成。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML页面">
+<meta property="og:url" content="https://2p59nw.coding-pages.com/posts/self-made/index.html">
+<meta property="og:site_name" content="HonkW&#39;s Storage">
+<meta property="og:description" content="个人制作的一些页面，使用大佬们模板制作而成。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-14T14:56:44.000Z">
+<meta property="article:modified_time" content="2020-08-14T15:17:38.276Z">
+<meta property="article:author" content="HonkW">
+<meta property="article:tag" content="html">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+ 
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                HonkW's Storage
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="https://honk.wang" target="_blank" rel="noopener" class="navbar-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/" class="navbar-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/tags" class="navbar-menu button">
+                        标签
+                    </a>
+                
+                    <a href="/categories/" class="navbar-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="navbar-menu button">
+                        归档
+                    </a>
+                
+                    <a href="/link/" class="navbar-menu button">
+                        友链
+                    </a>
+                
+            </div>
+        
+        
+        
+    <a href="/search/" id="btn-search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="32"><path d="M192 448c0-141.152 114.848-256 256-256s256 114.848 256 256-114.848 256-256 256-256-114.848-256-256z m710.624 409.376l-206.88-206.88A318.784 318.784 0 0 0 768 448c0-176.736-143.264-320-320-320S128 271.264 128 448s143.264 320 320 320a318.784 318.784 0 0 0 202.496-72.256l206.88 206.88 45.248-45.248z"></path></svg>
+    </a>
+
+        
+        
+
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="https://honk.wang" target="_blank" rel="noopener" class="dropdown-menu button">
+                        主站
+                    </a>
+                
+                    <a href="/" class="dropdown-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/tags" class="dropdown-menu button">
+                        标签
+                    </a>
+                
+                    <a href="/categories/" class="dropdown-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a href="/link/" class="dropdown-menu button">
+                        友链
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+<div class="post-title">
+    <h1 class="post-title__text">
+        HTML页面
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2020/08/" class="post-meta__date button">
+    2020-08-14
+</a>
+        
+    <span class="separate-dot"></span><a href="/categories/%E7%BD%91%E9%A1%B5/" class="button">网页</a>
+
+ 
+        
+    
+     
+    <span id="busuanzi_container_page_pv" hidden>
+        <span class="separate-dot"></span>
+        <span></span>
+        <span id="busuanzi_value_page_pv"></span>
+        <span>Views</span>
+    </span>
+
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <article class="post content-card">
+        <div class="post__header">
+             
+            
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最后更新于 <span id="expire-date"></span> 天前，文中部分描述可能已经过时。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-08-14"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
+
+        </div>
+        <div class="post__content">
+            <h1 id="导航页面"><a href="#导航页面" class="headerlink" title="导航页面"></a>导航页面</h1><blockquote>
+<p>常用的一些网站的导航页面<br><a href="/box">Navigation</a></p>
+</blockquote>
+<h1 id="IC相关公众号导航页面"><a href="#IC相关公众号导航页面" class="headerlink" title="IC相关公众号导航页面"></a>IC相关公众号导航页面</h1><blockquote>
+<p>收集了多个IC相关公众号制作二维码导航页面<br><a href="/IC">IC-Navigation</a></p>
+</blockquote>
+<h1 id="同天生日纪念"><a href="#同天生日纪念" class="headerlink" title="同天生日纪念"></a>同天生日纪念</h1><blockquote>
+<p>庆祝与JaneR同一天生日的页面<br><a href="/love">Love</a></p>
+</blockquote>
+
+        </div>
+        
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>HonkW
+        </p>
+        <p>
+            <strong>
+                本文链接：
+            </strong>
+            <a href="https://2p59nw.coding-pages.com/posts/self-made/">https://2p59nw.coding-pages.com/posts/self-made/</a>
+        </p>
+        
+    </div>
+ 
+        <div class="post-footer__meta">
+    <p>
+        更新于2020-08-14
+    </p>
+</div> 
+        <div class="post-meta__cats">
+    
+        <a href="/categories/%E7%BD%91%E9%A1%B5/" class="post-cats__link button">网页</a>
+    
+    
+        <a href="/tags/html/" class="post-tags__link button"># html</a>
+    
+</div> 
+    </article>
+    
+
+
+</main>
+
+            <footer class="footer">
+    
+
+
+    
+    
+    
+        <span id="busuanzi_container_site_uv" hidden>
+            <span></span>
+            <span id="busuanzi_value_site_uv"></span>
+            <span>Viewers</span>
+            
+                <span>&nbsp;&nbsp;&nbsp;|</span>
+            
+        </span>
+    
+    
+        <span id="busuanzi_container_site_pv" hidden>
+            <span></span>
+            <span id="busuanzi_value_site_pv"></span>
+            <span>Views</span>
+            
+        </span>
+    
+ 
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright&nbsp;©&nbsp;2020&nbsp;-&nbsp;2020&nbsp;<a href="/">HonkW&#39;s Storage</a>
+        </p>
+    
+    
+        
+            <center>JaneR <a href="https://honk.wang/love/" target="_blank" rel="noopener" one-link-mark="yes">💕</a> HonkW</center>
+        
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+  
+
+
+
+ 
+
+
+    
+
+
+ 
+
+
+
+
+
+
+
+
+    </body>
+</html>
